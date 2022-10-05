@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 80%;
+    width: 60px;
+}
+
+.container {
+    width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navbar {
+    color: #fff;
+    height: 4rem;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar label {
+    background: #202428;
+    font-size: 1.1rem;
+    color: white;
+    border: 1px solid black;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.8rem;
+    margin: 0.2rem;
+}
+
+.img-button {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}

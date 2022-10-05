@@ -1,22 +1,21 @@
-import { Route, Routes } from 'react-router-dom';
-import Home from '../pages/home/Home';
-import Main from '../pages/main/Main';
-import Open from '../pages/open/Open';
-import Create from '../pages/create/Create';
-import Wallet from '../pages/wallet/Wallet';
+import { Route, Routes } from "react-router-dom";
+import Landing from "../pages/landing/Landing";
+import EthWallet from "../pages/ethwallet/EthWallet";
+import EthOpen from "../pages/ethopen/EthOpen";
+import BtcWallet from "../pages/btcwallet/BtcWallet";
+import BtcOpen from "../pages/btcopen/BtcOpen";
 
 const BaseRoutes = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/main" element={<Main />} />
-                <Route path="/create" element={<Create />} />
-                <Route path="/open" element={<Open />} />
-                <Route path="/wallet" element={<Wallet />} />
+                <Route path="/" element={<Landing />} />
+                <Route path="/eth/wallet" element={<EthWallet />} />
+                <Route path="/eth/open" element={<EthOpen />} />
+                <Route path="/btc/wallet" element={<BtcWallet />} />
+                <Route path="/btc/open" element={<BtcOpen />} />
             </Routes>
         </>
-        
     );
 };
 
